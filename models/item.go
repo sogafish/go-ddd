@@ -1,14 +1,14 @@
 package models
 
 import (
-	"time"
+  "time"
 
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+  _ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 type Item struct {
-	ID        int `gorm:"primaryKey" json:"id"`
-	Title     string     `gorm:"size:255" json:"title,omitempty"`
-	CreatedAt    *time.Time `json:"created_at"`
-	UpdatedAt    *time.Time `json:"updated_at"`
+  ID           int `gorm:"primaryKey" json:"id"`
+  Title        string     `gorm:"size:255" json:"title,omitempty"`
+  CreatedAt    *time.Time `json:"created_at"`
+  UpdatedAt    *time.Time `json:"updated_at"`
 }
